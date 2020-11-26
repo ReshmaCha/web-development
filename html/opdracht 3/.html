@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <H1>Onderdeel 3 Forms en tabellen</H1>
+
+<table> <button>
+    <form action="/action_page.php">
+        <label for="Achternaam">Achternaam</label>
+        <input type="text" id="Achternaam" name="Achternaam" value=""><br>
+        <label for="Voornaam">Voornaam  </label>
+        <input type="text" id="lname" name="Voornaam" value=""><br>
+        
+      </form> </button></table>
+
+<br>
+
+     <h2>Radiobutton ( max 1 keuze)</h2>
+
+      <form action="/action_page.php">
+        
+        <input type="radio" id="man" name="gender" value="man">
+        <label for="man">Man</label><br>
+        <input type="radio" id="vrouw" name="gender" value="vrouw">
+        <label for="vrouw">vrouw</label><br>
+        
+<br>
+
+
+<h2>Checkbox , met welk voertuig reis jij? (Meerdere opties mogelijk)</h2>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="auto">
+<label for="vehicle1"> Ik reis per auto</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="fiets">
+<label for="vehicle2"> Ik reis per fiets</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="OV">
+<label for="vehicle3"> Ik reis met OV</label><br>
+
+<br>
+
+<h2> <p> Password wordt altijd onzichtbaar </p></h2>
+<label for="pwd">Password</label>
+<input type="password" id="pwd" name="pwd">
+
+
+<br>
+
+
+<h2><p>Met de resetknop worden alle formulierwaarden gereset naar de oorspronkelijke waarden.  </p></h2>
+<input type="reset">
+
+
+<br>
+
+
+<h2><p>Submit zendt de gegevens naar een andere pagina</p></h2>
+
+<form action="/action_page.php">
+    
+    <input type="submit" value="Submit">
+  </form>
+
+
+  <br>
+
+
+  <h2><p>Datum invullen</p></h2>
+  <form action="/action_page.php">
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday">
+    
+  </form>
+
+<br>
+
+
+<h2><p> Een searchbar</p></h2>
+
+<form action="/action_page.php">
+  <label for="gsearch"></label>
+  <input type="search" id="gsearch" name="gsearch">
+  <input type="submit">
+</form>
+
+
+<br>
+
+
+<h2><p> Een tijdbar</p></h2>
+
+
+<form action="/action_page.php">
+  <label for="appt">Selecteer een tijd</label>
+  <input type="time" id="appt" name="appt">
+  <input type="submit">
+</form>
+
+<br>
+
+<h2><p> Een verborgen invoerveld</p></h2>
+
+<form action="/action_page.php">
+    <label for="fname">Naam:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <input type="hidden" id="custId" name="custId" value="3487">
+    <input type="submit" value="Submit">
+  </form>
+
+
+<br>
+
+<h2>Enter your emailadres </h2>
+<form action="/action_page.php">
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+  <input type="submit">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
