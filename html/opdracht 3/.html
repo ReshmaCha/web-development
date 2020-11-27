@@ -120,6 +120,255 @@
   <input type="submit">
 </form>
 
+<br>
+
+<fieldset>
+    <legend><b>Persoonsgegevens</b></legend>
+      <p><label>Achternaam: <input name="Achternaam"></label></p>
+      <p><label>Voornaam: <input name="Voornaam"></label></p>
+      <p>
+      <label for="Geboortedatum">Geboortedatum:</label>
+    <input type="date" id="Geboortedatum" name="Geboortedatum"></p>
+    <form action="/action_page.php">
+        
+        <input type="radio" id="m" name="gender" value="m">
+        <label for="m">M</label>
+        <input type="radio" id="V" name="gender" value="V">
+        <label for="V">V</label>
+        <p><label>Postcode: <input name="Postcode"></label></p>
+      <p><label>Adres: <input name="Adres"></label></p>
+    </fieldset>
+
+      <input type="submit" value="Submit">
+      <input type="reset">
+
+<br>
+
+<p><form action="/action_page.php">
+    <label for="cars">:</label>
+    <select name="cars" id="cars">
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </optgroup>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+  </form></p>
+    
+
+<br>
+
+<table> <button>
+    <form action="/action_page.php">
+        <label for="Naam">Naam</label>
+        <input type="text" id="Naam" name="Naam" value=""><br>
+        <input type="radio" id="man" name="gender" value="man">
+        <label for="man">Wel lidmaatschap</label><br>
+        <input type="radio" id="vrouw" name="gender" value="vrouw">
+        <label for="vrouw">Geen lidmaatschap</label><br>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"> <br>
+        <label for="Type sport">Type sport:</label>
+        <select name="type sport" id="type sports">
+            <option value="Tafeltennis">Tafeltennis</option>
+            <option value="Badminton">Badminton</option>
+            <option value="Squash">Squash</option> <br>
+            <br>
+         <label for="Datum">Datum:</label>
+         <input type="date" id="Datum" name="Datum"></p>
+         <label for="appt">Selecteer een tijd</label>
+         <input type="time" id="appt" name="appt"><br>
+         <input type="checkbox" id="vehicle1" name="vehicle1" value="auto">
+         <label for="vehicle1"> Ik ga akkoord</label><br>
+         <input type="checkbox" id="vehicle2" name="vehicle2" value="fiets">
+         <label for="vehicle2"> Ik ga niet akkoord</label><br>
+         <input type="submit" value="Submit">
+</form> </button></table>
+
+<fieldset>
+    <legend><b>Reserveringsformulier</b></legend>
+      <p><label>Naam: <input name="Naam"></label></p>
+      <p><label>Telefoonnummer: <input name="Telefoonnummer"></label></p>
+     <p> <label for="email">Enter your email:</label></p>
+     <p> <input type="email" id="email" name="email"> </p>
+     <p><label>Naam boek: <input name="Naam boek"></label></p>
+     <p>    <label for="aantal boeken">:</label>  </p>
+     <p>  <select name="aantal boeken" id="aantal boeken"></p> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>                             
+            <option value="5">5</option>  </label>
+<br>
+
+<p> <label for="Geboortedatum">Geboortedatum:</label> </p>
+    <input type="date" id="Geboortedatum" name="Geboortedatum"></p>
+    <form action="/action_page.php">
+        
+        <input type="radio" id="m" name="gender" value="m">
+        <label for="m">M</label>
+        <input type="radio" id="V" name="gender" value="V">
+        <label for="V">V</label>
+        <p><label>Postcode: <input name="Postcode"></label></p>
+        <p><label>Adres: <input name="Adres"></label></p>
+        <br>
+        
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+
+<br>
+
+<form action="vb/forms/fieldset/check.php" method="post"> 
+    <fieldset>
+     <legend><b>Geef je gegevens op:</b></legend>
+    <p><label for="n">Naam: </label><input id="n" name="naam" size="30"></p>
+    <p><label for="a">Adres: </label><input id="a" name="adres" size="30"></p>
+    </fieldset>
+   <p>
+    <fieldset>
+     <legend><b>Volgende cursus zou ik graag willen volgen:</b></legend>
+    <input type="radio" name="taal" value="HTML" checked>HTML<br>
+    <input type="radio" name="taal" value="CSS">CSS<br>
+    <input type="radio" name="taal" value="PHP">PHP<br>
+    <input type="radio" name="taal" value="SQL">SQL<br>
+    </fieldset> 
+   <p>
+    <fieldset>
+     <legend><b>Inschrijven voor nieuwsbrief:</b></legend>
+    <input type="radio" name="nbrief" value="Ja" checked>Ja 
+    <input type="radio" name="nbrief" value="Nee">Nee</p>
+    </fieldset>
+   <p>
+    <input type="submit" name="submit" value="Verzenden">
+   </form>  
+    
+    </fieldset>
+
+
+
+<h2><p>HTML Tables</p></h2>
+
+
+<p> <ul><li> table is een tabel   </li></ul>  </p>
+<p><ul><li> thead wordt gebruikt om koptekstinhoud in een HTML-tabel te groeperen</li> </ul></p>
+<p><ul><li>tbody wordt gebruikt om de hoofdinhoud in een HTML-tabel te groeperen </li></ul></p>
+<p><ul><li>tfoot wordt gebruikt om voettekstinhoud in een HTML-tabel te groeperen</li> </ul></p>
+<p><ul><li>th definieert een kopcel in een HTML-tabe  </li></ul></p>
+<p><ul><li>tr definieert een rij in een HTML-tabel</li></ul></p>
+<p><ul><li>td definieert een standaardgegevenscel in een HTML-tabe </li></ul></p>
+
+
+<br>
+  
+  
+
+
+
+    <table> <button>
+        <tr>
+          <th>Voornaam</th>
+          <th>Achternaam</th>
+          <th>Leeftijd</th>
+          <th>Telefoonnummer</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>41</td>
+          <td>+3112345678</td>
+        </tr>
+        <tr>
+          <td>Steven </td>
+          <td>Smith</td>
+          <td>32 </td>
+          <td>+3112345678 </td>
+        </tr>
+          <tr>
+            <td>Alexander</td>
+            <td>Beave</td>
+            <td>16</td>
+            <td>+3112345678</td>
+          </tr>
+</button> </table> <br>
+
+
+
+<table>
+
+
+    <table> <button>
+        <tr>
+          <th>Ma</th>
+          <th>Di</th>
+          <th>Wo</th>
+          <th>Do</th>
+          <th>Vr</th>
+
+        </tr>
+        <tr>
+          <td>Afspraak tandarts</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>Sporten</td>
+        </tr>
+        <tr>
+          <td> </td>
+          <td>Huiswerk maken</td>
+          <td>Werken </td>
+          <td>Werken </td>
+          <td> </td>
+
+        </tr>
+          <tr>
+            <td>Afspraak tandarts</td>
+            <td></td>
+            <td></td>
+            <td>Werken bij vrienden</td>
+            <td></td>
+          </tr>
+</button> </table>
+
+
+ <br>
+
+
+
+<h3><p>Je kan het colspan attribuut gebruiken als je twee of meer kolommen wilt samen voegen in een enkele kolom. Het attribuut rowspan wordt op de zelfde manier gebruikt als je twee of meer rijen wilt samenvoegen.</p></h3>
+
+
+
+
+<h2>Voorbeeld van Colspan en Rowspan</h2>
+<table style="width:100%">
+ <tr>
+   <th>Kolom 1</th>
+   <th>Kolom 2</th>
+   <th>Kolom 3</th>
+ </tr>
+ <tr>
+   <td rowspan="2">Rij 1 - Cel 1 (Rowspan)</td>
+   <td>Rij 1 - Cel 2</td>
+   <td>Rij 1 - Cel 3</td>
+ </tr>
+ <tr>
+   <td>Rij 2 - Cel 2</td>
+   <td>Rij 2 - Cel 3</td>
+ </tr>
+ <tr>
+   <td colspan="3">Rij 3 - Cel 1 (Colspan)</td>
+ </tr>
+</table>
+<p>• Rowspan wordt gebruikt om twee of meer rijen samen te voegen.
+<br>
+• Colspan wordt gebruikt om twee of meer kolomen samen te voegen.
+
 
 
 
