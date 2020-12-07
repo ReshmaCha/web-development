@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox-justify-content</title>
+</head>
+<style>
+    #main {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #main div {
+        width: 70px;
+        height: 70px;
+    }
+
+    #flex-end {
+       
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #flex-end div {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    div#center {
+        display: flex;
+        justify-content: center;
+    }
+
+    #center div {
+        width: 70px;
+        height: 70px;
+    }
+
+    #space-between {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #space-between div {
+        width: 70px;
+        height: 70px;
+    }
+
+    #space-around {
+        width: 400px;
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #space-around div {
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+
+
+
+</style>
+
+
+<body>
+
+    <h1>Justify-content</h1>
+
+    <h3>Met justify-content bepaal je waar erin gestart kan worden waar je de content wilt plaatsen. </h3>
+    <p>Het helpt bij het verdelen van extra vrije ruimte restjes wanneer alle flex items op een lijn zijn,inflexibel, of
+        flexibel.</p>
+    <p> Maar hun maximale grootte heeft bereikt. Het oefent ook enige controle over de uitlijning van items wanneer ze
+        overlopen de lijn.</p>
+
+
+    <p>
+    <h2>flex-start</h2> Standaard waarde , items worden geplaatst vanaf het begin </p>
+
+
+
+    <div id="main">
+        <div style="background-color:rgb(255, 80, 95);">1</div>
+        <div style="background-color:rgb(22, 101, 128);">2</div>
+        <div style="background-color:rgb(184, 158, 146);">3</div>
+    </div>
+
+    <br>
+
+    <p>
+    <h2>flex-end</h2>Items worden tegen het einde van de flexrichting geplaatst. </p>
+
+    <div id="flex-end">
+        <div style="background-color:rgb(255, 80, 95);">1</div>
+        <div style="background-color:rgb(22, 101, 128);">2</div>
+        <div style="background-color:rgb(184, 158, 146);">3</div>
+    </div>
+
+    <p>
+    <h2>Center</h2> : Items zijn gecentreerd. </p>
+
+    <div id="center">
+        <div style="background-color:rgb(255, 80, 95);">1</div>
+        <div style="background-color:rgb(22, 101, 128);">2</div>
+        <div style="background-color:rgb(184, 158, 146);">3</div>
+    </div>
+
+<br>
+
+
+<p>
+    <h2>Space-between</h2> : Items zijn gelijkmatig verdeeld, let wel de eerste (en de laatste) zijn vanaf de startregel </p>
+
+    <div id="space-between">
+        <div style="background-color:rgb(255, 80, 95);">1</div>
+        <div style="background-color:rgb(22, 101, 128);">2</div>
+        <div style="background-color:rgb(184, 158, 146);">3</div>
+    </div>
+
+<br>
+
+<p>
+    <h2>Space-around</h2> : Items zijn gelijkmatig verdeeld op de 1e en de laatste na omdat zij beginnen vanaf de containerrand. </p>
+
+    <div id="space-around">
+        <div style="background-color:rgb(255, 80, 95);">1</div>
+        <div style="background-color:rgb(22, 101, 128);">2</div>
+        <div style="background-color:rgb(184, 158, 146);">3</div>
+    </div> 
+
+<br>
+
+
+
+
+</body>
+
+</html>
