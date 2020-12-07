@@ -8,118 +8,46 @@
 <style>
 
 button{
+      position: relative;
       height:70px;
       width: 500px;
- background-color: blue;
+      background-color: blue;
+      border-left: 5px solid hotpink;
+      border-right: 5px solid yellow;
+      outline-style: none;
+      right: 90px;
+      left: 70px;
+}
+
+
+
+button::before{
+                content:'';
+                height: 70px;
+                width: 70px;
+                position: absolute;
+                top: -2px;
+                left: -3px;
+                
+                border-top: solid 5px hotpink;
+
+
+}
+
+button::after{
+              content:'';
+              height: 70px;
+              width: 70px;
+              position: absolute;
+              top: -7px;
+              right:-4px ;
+              border-bottom: solid 5px yellow;
+
+
 
 }
 
 
-/* .button {
-    position: absolute;
-    text-align: left;
-    width: 150px;
-    margin: auto;
-    line-height: 2;
-  }
-  .top-and-bottom, .left-and-right, .corner-border, .bottom-corner {
-    position: relative;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  
-  }
-  
-  /* top line */
-  /* .top-and-bottom::before {
-    content:'';
-    position: absolute;
-    background-color: pink;
-    width: 30%;
-    height: 3px;
-    top: 0;
-    left:0;
-  } */
-  
-  /* bottom line */
-  /* .top-and-bottom::after {
-    content:'';
-    position: absolute;
-    background-color: pink;
-    width: 30%;
-    height: 3px;
-    bottom: 0;
-    left:0;
-  }
-  
-  /* left line before text*/
-  /* .left-and-right::before {
-    content:'';
-    position: absolute;
-    background-color: #85C1E9;
-    width: 3px;
-    height: 90%;
-    bottom: 0;
-    left:-7px; 
-  }  */
-  
-  /* left line after text*/
-  /* .left-and-right::after{
-    content:'';
-    position: absolute;
-    background-color: #85C1E9;
-    width: 3px;
-    height: 90%;
-    bottom: 0;
-    right:55px;
-   
-  }
-  
-  /* vertical line */
-  /* .corner-border::after {
-    content:'';
-    position: absolute;
-    background-color: pink;
-    width: 3px;
-    height: 60%;
-    top: 0;
-    left:-15px;
-   
-  } */
-  
-  /* horizontal line */
-  /* .corner-border::before{
-    content:'';
-    position: absolute;
-    background-color: pink;
-    width: 20%;
-    height: 3px;
-    top: 0;
-    left:-12px;
-   
-  }
-   */
-  /* vertical line */
-  /* .bottom-corner::after {
-    content:'';
-    position: absolute;
-    background-color: #85C1E9;
-    width: 3px;
-    height: 50%;
-    bottom: 0;
-    right:45px;
-    */
-  
- 
-  /* .bottom-corner::before {
-    content:'';
-    position: absolute;
-    background-color: #85C1E9;
-    width: 20%;
-    height: 3px;
-    bottom: 0;
-    right:45px;
-   
-  } */
 
 </style>
 
@@ -127,7 +55,7 @@ button{
 
 
 
-<button>Button</button>
+<button> <h1>  Button</h1></button>
 
 
 </body>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo elements 6</title>
+</head>
+<style>
+    div.absolute::after {
+        content: '';
+        position: absolute;
+        top: 95px;
+        left: 25px;
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+        background-color: black;
+        border-radius: 50px;
+        z-index: -1;
+    }
+
+    div.absolute4::after {
+        position: absolute;
+        content: '';
+        top: 95px;
+        left: 180px;
+        width: 50px;
+        height: 50px;
+        border: 3px solid black;
+        background-color: black;
+        border-radius: 50px;
+        z-index: -1;
+    }
+
+    div.hoofd {
+        content: '';
+        position: absolute;
+        top: 100px;
+        left: 25px;
+        width: 200px;
+        height: 200px;
+        border: 3px solid black;
+        background-color: black;
+        border-radius: 100px;
+        z-index: 0;
+
+    }
+
+    div.absolute2 {
+
+        position: absolute;
+        content: '';
+        top: 175px;
+        left: 85px;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(243, 235, 235);
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+    div.absolute5 {
+
+        position: absolute;
+        content: '';
+        top: 175px;
+        left: 155px;
+        width: 10px;
+        height: 10px;
+        background-color: rgb(243, 235, 235);
+        border-radius: 5px;
+        z-index: 1;
+    }
+
+
+
+
+    div.absolute3 {
+
+        position: absolute;
+        content: '';
+        color: rgb(238, 235, 241);
+        top: 185px;
+        left: 120px;
+        width: 30px;
+        height: 30px;
+        z-index: 2;
+
+
+
+
+    }
+
+    div.beer1 {
+        position: relative;
+        content: '';
+        display: inline-block;
+
+    }
+
+    div.beer2 {
+        position: relative;
+        content: '';
+        display: inline-block;
+        left: 240px;
+    }
+
+    div.beer3 {
+        position: relative;
+        content: '';
+        display: inline-block;
+        left: 480px;
+    }
+
+    div.beer4 {
+        position: relative;
+        content: '';
+        display: inline-block;
+        left: 740px;
+    }
+</style>
+
+<body>
+
+
+    <div class="beer1">
+        <div class="absolute"> </div>
+        <div class="absolute4"> </div>
+        <div class="hoofd"> </div>
+        <div class="absolute2"></div>
+        <br>
+        <div class="absolute5"></div>
+
+        <div class="absolute3">
+            <p>1</p>
+        </div>
+
+
+    </div>
+
+    <div class="beer2">
+        <div class="absolute"> </div>
+        <div class="absolute4"> </div>
+        <div class="hoofd"> </div>
+        <div class="absolute2"></div>
+        <br>
+        <div class="absolute5"></div>
+
+        <div class="absolute3">
+            <p>2</p>
+        </div>
+
+
+    </div>
+
+    <div class="beer3">
+        <div class="absolute"> </div>
+        <div class="absolute4"> </div>
+        <div class="hoofd"> </div>
+        <div class="absolute2"></div>
+        <br>
+        <div class="absolute5"></div>
+
+        <div class="absolute3">
+            <p>3</p>
+        </div>
+
+
+    </div>
+
+    <div class="beer4">
+        <div class="absolute"> </div>
+        <div class="absolute4"> </div>
+        <div class="hoofd"> </div>
+        <div class="absolute2"></div>
+        <br>
+        <div class="absolute5"></div>
+
+        <div class="absolute3">
+            <p>4</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
