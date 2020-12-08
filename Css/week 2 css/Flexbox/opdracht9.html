@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox/Mario</title>
+</head>
+<style>
+    .flex-container {
+        display: flex;
+        background-color: aqua;
+        height: 700px;
+        justify-content: space-around;
+    }
+
+    .flex-container div {
+        background-color: blue;
+        margin: 2px;
+        padding: 15px;
+        width: 365px;
+
+    }
+
+
+
+    .divMario1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        width: 90px;
+        height: 180px;
+        background-color: black;
+        text-align: center;
+        box-sizing: border-box;
+
+
+    }
+
+    .divMario1 > img{
+            display: block;
+            background-color: blueviolet;
+            height:180px ;
+            width: 80px;
+    }
+
+    .divMario1 button {
+        
+        
+        align-items: center;
+        justify-content: flex-end;
+    }
+.divMario1 p{
+            text-align: center;
+}
+
+</style>
+
+
+<body>
+
+    <div class="flex-container">
+
+
+        <div class="Mario1">
+            <img src="./infinite-mario.jpg" alt="">
+            <h4>Infinite Mario</h4>
+            <p>
+            En hier komt een stuk tekst wat ongeveer zoooooooooo lang is</p>
+            <button>infinite-mario</button>
+        </div>
+
+
+
+
+
+        <div class="Mario2"><img src="./super-julio.jpg" alt="">
+            <p>
+            <h4>Super Julio</h4>En hier komt een stuk tekst wat ongeveer zoooooooooo lang is</p>
+            <button>Super-julio</button>
+        </div>
+        <div class="Mario3"><img src="./super-mario-bros-free.jpg" alt="">
+            <p>
+            <h4>Super Julio</h4>En hier komt een stuk tekst wat ongeveer zoooooooooo lang is</p>
+            <button>Super-mario-bros-free</button>
+        </div>
+        <div class="Mario4"><img src="./super-mario-crossover-3.jpg" alt="">
+            <p>
+            <h4>Super Julio</h4>En hier komt een stuk tekst wat ongeveer zoooooooooo lang is</p>
+            <button>super-mario-crossover-3 </button>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

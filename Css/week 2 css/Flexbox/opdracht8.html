@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox/flexwrap</title>
+</head>
+<style> 
+#main {
+  width: 150px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+#main div {
+  width: 48px;
+  height: 50px;
+  border: solid 1px gray;
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-wrap Property</h1>
+
+<div id="main">
+  <div style="background-color:coral;">1</div>
+  <div style="background-color:lightblue;">2</div>
+  <div style="background-color:khaki;">3</div>
+  <div style="background-color:pink;">4</div>
+  <div style="background-color:lightgrey;">5</div>
+  <div style="background-color:lightgreen;">6</div>
+</div>
+
+<p><strong>Deze flexbox is gemaakt met flex-wrap ,justify-content en align-items.</strong></p>
+
+</body>
+</html>

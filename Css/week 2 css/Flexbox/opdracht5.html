@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox/Align-Items</title>
+</head>
+<style>
+    #center {
+        width: 113px;
+        height: 150px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+    }
+
+
+
+    div#flex-start {
+        width: 113px;
+        height: 150px;
+        border: 1px solid black;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    div#flex-end {
+        width: 113px;
+        height: 150px;
+        border: 1px solid black;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    div#stretch {
+        width: 113px;
+        height: 150px;
+        border: 1px solid black;
+        display: flex;
+        align-items: stretch;
+    }
+
+    div#baseline {
+        width: 113px;
+        height: 150px;
+        border: 1px solid black;
+        display: flex;
+        align-items: baseline;
+    }
+</style>
+
+
+<body>
+
+    <h1>5. Align-Items</h1>
+
+
+
+    <p> Met align-items kun je bepalen hoe de uitlijning eruit komt te zien,</p>
+    <p></p> dit kan op verschillende manieren,</p>
+    <p></p> van links naar rechts(Row) en omgekeerd (Row-reverse),</p>
+    <p></p> van boven naar beneden (Column) of omgekeerd (Column-reverse),in het midden(Center)</p>
+    <br>
+
+    <h4>Flex-start:</h4>
+    <div id="flex-start">
+        <div style="background-color:coral;">RED</div>
+        <div style="background-color:lightblue;">BLUE</div>
+        <div style="background-color:lightgreen;">Green</div>
+    </div>
+
+    <br>
+    <h4>Flex-end:</h4>
+    <div id="flex-end">
+        <div style="background-color:coral;">RED</div>
+        <div style="background-color:lightblue;">BLUE</div>
+        <div style="background-color:lightgreen;">Green</div>
+    </div>
+<br>
+
+    <h4>Center:</h4>
+    <div id="center">
+        <div style="background-color:coral;">RED</div>
+        <div style="background-color:lightblue;">BLUE</div>
+        <div style="background-color:lightgreen;">Green</div>
+    </div>
+    <br>
+
+    <h4>Stretch:</h4>
+    <div id="stretch">
+        <div style="background-color:coral;">RED</div>
+        <div style="background-color:lightblue;">BLUE</div>
+        <div style="background-color:lightgreen;">Green</div>
+    </div>
+    <br>
+
+    <h4>Baseline:</h4>
+    <div id="baseline">
+        <div style="background-color:coral;">RED</div>
+        <div style="background-color:lightblue;">BLUE</div>
+        <div style="background-color:lightgreen;">Green</div>
+    </div>
+
+
+
+
+</body>
+
+</html>
