@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions/timing-function</title>
+</head>
+    <style>
+        div {
+            width: 100px;
+            height: 50px;
+            background: rgb(27, 238, 122);
+            color: rgb(12, 12, 12);
+            font-weight: bold;
+            transition: width 1s;
+        }
+
+        #div1 {
+            transition-timing-function: linear;
+        }
+
+        #div2 {
+            transition-timing-function: ease;
+        }
+
+        #div3 {
+            transition-timing-function: ease-in;
+        }
+
+        #div4 {
+            transition-timing-function: ease-out;
+        }
+
+        #div5 {
+            transition-timing-function: ease-in-out;
+        }
+
+        div:hover {
+            width: 300px;
+        }
+    </style>
+
+
+<body>
+
+    <h1>De transition-timing-functie Property</h1>
+
+
+    <div id="div1">Linear</div>
+    <div id="div2">Ease</div>
+    <div id="div3">Ease-in</div>
+    <div id="div4">Ease-out</div>
+    <div id="div5">Ease-in-out</div>
+    <strong>
+        <p>Beweeg/hover over de div elementen om de verschillende overgangseffecten te zien.</p>
+    </strong>
+    <br>
+
+    <p><b>Linear</b> betekent een overgangseffect met dezelfde snelheid van begin tot eind (equivalent aan cubic-bezier
+        (0,0,1,1)).....</p>
+    <p><b>Ease</b> betekent de standaardwaarde. Specificeert een overgangseffect met een langzame start, dan snel en dan
+        langzaam eindigend (equivalent aan cubic-bezier (0,25,0,1,0,25,1))..</p>
+    <p><b>Ease-in</b> betekent een overgangseffect met een langzame start (equivalent aan cubic-bezier (0,42,0,1,1)) .
+    </p>
+    <p><b>Ease-out</b> betekent een overgangseffect met een langzaam einde (equivalent aan cubic-bezier (0,0,0.58,1))
+    </p>
+    <p><b>Ease-in-out</b> betekent een overgangseffect met een langzaam begin en einde (equivalent aan cubic-bezier
+        (0,42,0,0,58,1)) </p>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -7,25 +7,41 @@
     <title>Transitions/opdracht4</title>
 </head>
 
-
-
 <style>
-    div{
-        display: flex;
-        justify-content: center;
-        margin: 350px;
-        width: 100px;
-        height: 100px;
-        background: rgb(128, 122, 122);
-        transition-property: width, height;
-        transition-duration: 2s;
+    .container {
+        height: 490px;
+        width: 490px;
+        background-color: green;
+
+
+
     }
 
+.container div{
+        width: 90px;
+        height: 90px;
+}
 
-    div {
-        height: 150px;
-        width: 150px;
-        border: solid 1px;
+
+
+
+    #box1 {
+        
+        background-color: rgb(34, 0, 128);
+        display: flex;
+        align-content: center;
+        transition: all 1s ease-in-out;
+
+    }
+
+    #box2 {
+        
+        background-color: red;
+    }
+
+    #box3 {
+       
+        background-color: aqua;
 
     }
 </style>
@@ -36,20 +52,16 @@
     <h1>The transition-property Property</h1>
 
 
-
-
-
-
-
-
     <div class="container">
 
-        <div class="1">1</div>
-        <div class="2">2</div>
-        <div class="3">3</div>
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
 
     </div>
 
+
+    Ik zie de transition-property ,margin,height en width,left en right die gebruikt worden. zie aant.
 
 
 
