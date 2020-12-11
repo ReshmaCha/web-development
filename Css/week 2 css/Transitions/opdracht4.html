@@ -2,69 +2,73 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transitions/opdracht4</title>
-</head>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
 <style>
-    .container {
-        height: 490px;
-        width: 490px;
-        background-color: green;
+body {
+margin: 50px;
+}
 
+.container {
+border: solid black 1px;
+width: 700px;
+height: 400px;
+background-color: rgba(85, 172, 169, 0.37);
 
+}
 
-    }
+.box {
+width: 50px;
+height: 50px;
+background-color: rgba(85, 172, 169, 0.37);
+margin: 5px;
+border: solid black 1px;
+text-align: center;
+transition: all 2s ease-in-out, left 4s ease-in-out 2s, left 3s ease-in-out 1s;
+position: relative;
+left: 300px;
+top: 100px;
 
-.container div{
-        width: 90px;
-        height: 90px;
+}
+
+#box1 {
+position: relative;
+top: 158px;
+}
+
+#box3 {
+position: relative;
+top: 45px;
+}
+
+.container:hover #box1{
+transform: translatey(-155px);
+left: -2px;
+}
+
+.container:hover #box2{
+transform: translatey(-155px);
+left: 640px;
+}
+
+.container:hover #box3{
+transform: translatey(180px);
+left: -3px;
 }
 
 
-
-
-    #box1 {
-        
-        background-color: rgb(34, 0, 128);
-        display: flex;
-        align-content: center;
-        transition: all 1s ease-in-out;
-
-    }
-
-    #box2 {
-        
-        background-color: red;
-    }
-
-    #box3 {
-       
-        background-color: aqua;
-
-    }
 </style>
 </head>
 
 <body>
+<div class="container">
 
-    <h1>The transition-property Property</h1>
+<div class="box" id=box1>1</div>
+<div class="box" id=box2>2</div>
+<div class="box" id=box3>3</div>
 
-
-    <div class="container">
-
-        <div id="box1"></div>
-        <div id="box2"></div>
-        <div id="box3"></div>
-
-    </div>
-
-
-    Ik zie de transition-property ,margin,height en width,left en right die gebruikt worden. zie aant.
-
-
-
+</div>
 
 </body>
 
