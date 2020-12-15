@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ampersad</title>
+</head>
+
+<body>
+
+
+    <h1>&</h1>
+
+    <p>Ampersad (&-teken) is handig bij het nesten om tijdsverspilling te voorkomen</p>
+    <p>& verwijst altijd naar de bovenliggende selector</p>
+    <p>Je zou het kunnen zien als iets wat verwijderd en weer vervangen wordt</p>
+
+    <p> Bijv.</p>
+
+    <p></p> .parent {</p>
+    <p> .child {}</p>
+    <p> }</p>
+
+    <p>compileert naar</p>
+
+    <p>.parent .child {}</p>
+
+    <p>In Sass wordt dit gecompileerd middels een &-teken</p>
+
+    <p>.parent {
+        & .child {}
+        }</p>
+
+
+    <div class="parent">
+        Dit is een voorbeeld van een parent
+
+       <div class="child"> en dit is het voorbeeld van een child-selector</div>
+    </div>
+<pre></pre>
+
+<!-- Ampersad , hier de uileg -->
+commenten
+
+
+</body>
+
+</html>

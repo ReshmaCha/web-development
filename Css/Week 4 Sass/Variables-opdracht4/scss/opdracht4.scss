@@ -1,0 +1,13 @@
+$color-red:red;
+$color-green: green;
+
+.parent {
+    color: $color-green;
+   & .child {
+        color: $color-red;
+    }
+  }
+  
+
+
+

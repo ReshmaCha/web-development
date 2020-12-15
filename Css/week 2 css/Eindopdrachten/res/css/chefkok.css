@@ -1,0 +1,40 @@
+.cooking div {
+    display: flex;
+
+
+
+}
+
+.cooking {
+    background-image: url(./cooking.jpg) no-repeat cover;
+}
+
+
+/* img 
+   
+    height: 500px;
+    width: 1900px;
+    left: -10px;
+    top: 10px;
+    z-index: -1;
+
+*/
+p ::before {
+    position: absolute;
+    content: '';
+    color: rgb(97, 135, 216);
+
+}
+
+
+h1 {
+    color: rgb(128, 179, 128);
+
+}
+
+button {
+    color: aqua;
+    opacity: 0, 0;
+    border: 2px solid black;
+
+}

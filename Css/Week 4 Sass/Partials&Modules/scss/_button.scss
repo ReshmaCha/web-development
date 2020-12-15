@@ -1,0 +1,9 @@
+@import "./colors";
+
+
+.button { color: $button-color; 
+     &:hover {
+   color: $button-hover-color ;
+}
+}
+

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,OAAO,CAAC;EACJ,KAAK,EAHK,KAAK;CAOhB;;AALH,AAEG,OAFI,CAEF,MAAM,CAAC;EACJ,KAAK,EANF,GAAG;CAOT",
+    "sources": [
+        "../scss/opdracht4.scss"
+    ],
+    "names": [],
+    "file": "opdracht4.css"
+}
