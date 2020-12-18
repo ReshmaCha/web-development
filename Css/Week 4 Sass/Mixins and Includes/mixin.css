@@ -1,0 +1,16 @@
+button {
+  height: 80%;
+  width: 80%;
+  border: 1px black solid;
+}
+
+button {
+  color: yellow;
+  background-color: green;
+}
+
+button:hover {
+  color: purple;
+  background-color: black;
+}
+/*# sourceMappingURL=mixin.css.map */

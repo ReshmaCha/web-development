@@ -1,0 +1,33 @@
+// @mixin button {
+// $color: lightblue;
+// $background-color: yellow;
+// $background-color:hover pink;
+// $color :hover purple;
+// }
+
+
+
+// :hover {
+// @include button();
+// }
+
+
+// @mixin button {
+
+// }
+
+@mixin button () {
+    color: lightblue;
+    background-color: purple;
+    background-color:hover pink; 
+    color :hover black;
+    }
+
+
+    .button {
+    @include button();
+    }
+
+    :hover {
+    @include button();
+    }

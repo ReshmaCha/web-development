@@ -1,0 +1,16 @@
+// gestijlde button!
+button {
+  height: 80%;
+  width: 80%;
+  border: 1px black solid;
+  @include link;
+}
+
+@mixin link {
+  color: yellow;
+  background-color: green;
+  &:hover {
+    color: purple;
+    background-color: black;
+  }
+}
