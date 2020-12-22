@@ -14,3 +14,26 @@ button {
     background-color: black;
   }
 }
+
+// gestijlde square 
+@mixin square  {
+  background-color: rgb(77, 4, 77);
+  position: absolute;
+  margin-top: 50px; 
+  color: aqua;
+  
+&:hover.colorChangingSquare {
+	color: green;
+	background-color: rgb(179, 176, 29);
+	transform: translateX(1100px);
+	transition: all 5s linear;
+}
+}
+
+.colorChangingSquare {
+      height: 100px;
+      width: 100px;
+      border: 3px solid black;
+      @include square()
+}
+
