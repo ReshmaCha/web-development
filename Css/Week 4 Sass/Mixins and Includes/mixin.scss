@@ -21,13 +21,12 @@ button {
   position: absolute;
   margin-top: 50px; 
   color: aqua;
-  
 &:hover.colorChangingSquare {
 	color: green;
 	background-color: rgb(179, 176, 29);
 	transform: translateX(1100px);
 	transition: all 5s linear;
-}
+ }
 }
 
 .colorChangingSquare {
