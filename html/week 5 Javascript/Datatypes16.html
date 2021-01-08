@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> Maak een eigen voorbeeld van de volgende functies en licht toe wat de functie doet in het blok:  </p>
+        
+      <p>  <h3>1. charAt ( ) </h6> staat voor karakter na (character at) Tekens in een string worden van links naar rechts geïndexeerd. </p>   
+      <p> De index van het eerste teken is 0, en de index van het laatste teken - in een string genaamd stringName- is stringName.length - 1.</p>   
+      <p> Als het indexopgegeven item buiten dit bereik valt, retourneert JavaScript een lege tekenreeks.</p>  
+      <p>Voorbeeld in script en het antwoord wat hier uitkomt is The character at index 0   is 'B' </p>
+<br>
+<p> <h3>2.concat( )</h3> </p>
+
+<p>staat voor: de stringargumenten samen met de aanroepende string en retourneert een nieuwe string. </p>
+<p>Voorbeeld : de uitkomst hiervan is Hello World en daaronder voor de volgende console ,World Hello</p>
+
+<br>
+
+   <p> <h3> 3. slice( )</h3> betekent dat er delen uit worden gehaald/getrokken.</p>
+   <p>De methode slice () extraheert delen van een string en retourneert de geëxtraheerde delen in een nieuwe string.</p>
+   <p> Gebruik de begin- en eindparameters om het deel van de tekenreeks op te geven dat u wilt extraheren.</p> 
+   <p> Het eerste teken heeft positie 0, het tweede heeft positie 1, enzovoort.</p>
+   <p>Tip: gebruik een negatief getal om te selecteren vanaf het einde van de string.</p>
+   <p>De slice()methode extraheert een sectie van een string en retourneert deze als een nieuwe string, zonder de originele string te wijzigen.</p>
+   <p>In het voorbeeld komt dan : the lazy dog , als uitkomst.</p>
+
+   <br>
+
+   <h3> 4. split( ) </h3><p>De splitmethode verdeelt een String in een geordende lijst van substrings,</p>
+       <p>plaatst deze substrings in een array en retourneert de array.</p>
+        <p> De deling wordt gedaan door te zoeken naar een patroon; waarbij het patroon wordt opgegeven als de eerste parameter in de aanroep van de methode.   </p>
+<br>
+      <h3><p> 5. substr( ) </h3>De substr() methode retourneert een deel van de tekenreeks, beginnend bij de opgegeven index en daarna een bepaald aantal tekens.</p>
+        <script>
+            let anyString = 'Brave new world';
+            console.log("The character at index 0   is '" + anyString.charAt()   + "'");
+
+            const str1 = 'Hello';
+const str2 = 'World';
+console.log(str1.concat(' ', str2));
+// expected output: "Hello World"
+console.log(str2.concat(', ', str1));
+// expected output: "World, Hello"
+
+const str22 = 'The quick brown fox jumps over the lazy dog.';
+
+console.log(str22.slice(31));
+// expected output: "the lazy dog."
+
+const str = 'The quick brown fox jumps over the lazy dog.';
+
+const words = str.split(' ');
+console.log(words[3]);
+// expected output: "fox"
+
+const str33 = 'Mozilla';
+
+console.log(str33.substr(1, 2));
+// expected output: "oz"
+
+console.log(str33.substr(2));
+// expected output: "zilla"
+
+
+        </script>
+
+      
+
+      
+
+
+
+   
+
+
+
+
+
+</body>
+</html>
