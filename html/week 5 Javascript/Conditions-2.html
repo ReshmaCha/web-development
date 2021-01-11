@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions-opdracht2 </title>
+</head>
+<body>
+   
+<input type="number" name="number" id="number">
+<button id="btn" onclick="checkNumber()">button </button>
+
+    <div>
+        <span id="label"></span>
+
+    </div>
+   <script>
+     function checkNumber() {
+           
+               let number=   document.getElementById("number").value;
+               if (number > 4) { document.getElementById("label").innerText = "Het ingevoerde getal is groter dan 4";
+                    
+               }
+               
+               
+               
+               
+          }
+      </script> 
+   </body>
+   </html>  

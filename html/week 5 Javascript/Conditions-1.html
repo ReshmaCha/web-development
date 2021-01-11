@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions-opdracht1 </title>
+</head>
+<body>
+   
+<input type="number" name="number" id="number">
+<button id="btn" onclick="checkNumber()">button </button>
+
+    <div>
+        <span id="label"></span>
+
+    </div>
+   <script>
+    //    function = wat gaan we doen, wat willen wij doen?
+    //    Checknumber = verwijst naar wat we willen aanpassen nadat je geklikt heb
+       function checkNumber() {
+           
+        //    let is je variable die je  aanmaakt 
+            // number is de input 
+            // document.getElementById is hetgene waar je naar verwijst
+            // de number erin is dus datgene wat je hiermee bewerkt
+            // .value staat voor een getal 
+            // .innertext staat voor een Tekst 
+            // .innerhtml is gewoon alles in de body
+            let number=   document.getElementById("number").value;
+            if (number == 3) { document.getElementById("label").innerText = "Het ingevoerde getal is gelijk aan 3";
+                 
+            }
+            
+            
+            
+            
+       }
+   </script> 
+</body>
+</html>
