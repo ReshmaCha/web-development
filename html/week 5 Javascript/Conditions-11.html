@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions - opdracht 11</title>
+</head>
+<body>
+    <h3> Opdracht 11 </h3>
+    <p>   Programmeer de volgende logica in de checkNumber functie: </p>   
+    <p>   Als het ingevoerde getal is gelijk aan 21 of het ingevoerde getal is gelijk aan 23 , dan toon je op het label: “Het ingevoerde getal is gelijk aan 21 of is gelijk aan 23.”.      </p>
+    
+    <input type="number" name="number" id="number">
+<button id="btn" onclick="checkNumber()">button </button>
+
+    <div>
+        <span id="label"></span>
+
+    </div>
+   <script>
+     function checkNumber() {
+           
+               let number=   document.getElementById("number").value;
+               if (number ==21 || number ==23) { document.getElementById("label").innerText = "Het ingevoerde getal is gelijk aan 21 of is gelijk aan 23";
+                    
+               }
+               
+               
+              
+               
+            }
+
+            console.log (number==21 || number ==23)
+      </script> 
+
+
+
+
+
+</body>
+</html>

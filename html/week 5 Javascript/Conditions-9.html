@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions-opdracht 9</title>
+</head>
+<body>
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">button </button>
+    
+        <div>
+            <span id="label"></span>
+    
+        </div>   
+        <script>
+           
+            function checkNumber() {    
+                // > 5
+                // < 10
+                let number=   document.getElementById("number").value;
+               if (number > 5 &&  number < 10) { document.getElementById("label").innerText = "Het ingevoerde getal is kleiner dan 10 en groter dan 5";
+                    
+               }
+            }
+        </script>   
+        <!-- <script>
+           
+               function checkNumber() {
+                   
+               
+                    let number=   document.getElementById("number").value;
+                    if (number == 3) { document.getElementById("label").innerText = "Het ingevoerde getal is gelijk aan 3";
+                         
+                    }
+                    
+                    
+                    
+                    
+               }
+           </script>    -->
+</body>
+</html>

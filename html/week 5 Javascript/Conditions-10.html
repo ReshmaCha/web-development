@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions- opdracht 10</title>
+</head>
+<body>
+    <h3> Opdracht 10: </h3>
+    <p>  Deze opdracht is een uitbreiding van opdracht 7. </p>
+     <p>   Programmeer de volgende logica in de checkNumber functie: </p>
+      <p></p>  Als het ingevoerde getal is gelijk aan 13 of is groter dan 13 en het ingevoerde getal is gelijk aan 20 of kleiner dan 20, dan toon je op het label: “Het ingevoerde getal is gelijk aan 13 of groter dan 13 en is gelijk aan 20 of kleiner dan 20.”. </p>
+         </p>
+    
+    <input type="number" name="number" id="number">
+<button id="btn" onclick="checkNumber()">button </button>
+
+    <div>
+        <span id="label"></span>
+
+    </div>
+   <script>
+     function checkNumber() {
+           
+               let number=   document.getElementById("number").value;
+               if (number >= 13 && number <= 20) { document.getElementById("label").innerText = "Het ingevoerde getal is gelijk aan 13 of groter dan 13 en is gelijk aan 20 of kleiner dan 20";
+                    
+               }
+               
+               
+              
+               
+            }
+
+            console.log (number >= 13 && number <= 20)
+      </script> 
+
+
+
+
+
+</body>
+</html>
