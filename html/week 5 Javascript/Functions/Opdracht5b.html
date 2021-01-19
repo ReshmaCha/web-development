@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Random Name</h2>
+    <button id="buttonn" onclick="randomName()">Random name</button>
+
+    <div> 
+        <span id="nagekeken"></span>
+    </div>
+
+    <script>
+           let nagekeken = document.getElementById("nagekeken");
+           
+        let randomName = () => {
+                let alleNamen =["John","Olly","Hendrik","Mo","Tony","Irus","Jan" ,"Peter"];
+         
+            // 
+         
+            let randomnaam = alleNamen[Math.round(Math.random() * 8)];
+               console.log(randomnaam);
+               nagekeken.innerHTML = "Dit is " + randomnaam; 
+    </script>
+</body>
+
+</html>

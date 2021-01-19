@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check name</h1>
+    <input type="text" name="naam" id="naam">
+    <button id="btn" onclick="CheckName()">Check name</button>
+
+ 
+    <div> 
+        <span id="nagekeken"></span>
+    </div>
+
+   
+  
+ 
+    <script>
+            function CheckName () {
+                let inputNaam =document.getElementById("naam").value;
+                console.log(inputNaam);
+                let alleNamen = ["John", "Olly" , "Hendrik" ,"Mo" ,"Tony"];
+                if (alleNamen.includes(inputNaam)){
+                    nagekeken.innerHTML = "Bekende";
+                
+                } else {
+                    nagekeken.innerHTML = "Onbekend";
+                } 
+            }
+
+            
+
+    </script>
+</body>
+</html> 
