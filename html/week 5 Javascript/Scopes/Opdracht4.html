@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+    <h3> Opdracht 4:</h3>
+    <h4> Kijkend naar de volgende code:</h4>
+    <h4> Wat wordt er in de console gelogt? Hoe is dit anders voorgaande opdrachten? Lees je meer over closures:</h4>
+   <h4>Antwoord : Er staat nu Volvo v40 </h4>
+    <br>
+    <h5>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures </h5>
+
+  
+     
+    
+    
+    
+
+    <script>
+        function printCar() { 
+     carBrand = "Volvo"; 
+     return function(type) { 
+     console.log(carBrand + " " + type); 
+     } 
+     } 
+     const car = printCar(); 
+     car("v40"); 
+    </script>
+    
+
+
+
+
+
+</body>
+</html>

@@ -16,14 +16,15 @@
     <script>
            let nagekeken = document.getElementById("nagekeken");
            
-        let randomName = () => {
-                let alleNamen =["John","Olly","Hendrik","Mo","Tony","Irus","Jan" ,"Peter"];
+        const randomName = () => {
+                const alleNamen =["John","Olly","Hendrik","Mo","Tony","Irus","Jan" ,"Peter"];
          
-            // 
+            
          
             let randomnaam = alleNamen[Math.round(Math.random() * 8)];
                console.log(randomnaam);
                nagekeken.innerHTML = "Dit is " + randomnaam; 
+        }
     </script>
 </body>
 
