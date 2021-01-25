@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops /opdracht 3</title>
+</head>
+<body>
+
+    <h2>Opdracht 3: </h2>
+        
+       <p>Maak gebruik van een loop en itereer door de sports array heen.</p>
+       <p> Itereer de loop met even
+        getallen en print de waarde in jouw console uit.</p>
+
+    <div id="answer"></div>
+
+ <script>
+ const sports
+ = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal",
+"zwemmen", "korfbal"]
+
+
+for (let i of sports) {
+    console.log(i);
+}
+var nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+let evens = [];
+let odds = [];
+
+let evenNumbers = function(nums) {
+    for (let i = 0; i < nums.length; i++) {
+
+        if ((nums[i] % 2) != 1) {
+            evens.push(nums[i]);
+                console.log(evens);
+        }
+        // else {
+        //     odds.push(nums[i]);
+        //         console.log(odds);
+        // }
+    }
+
+};
+
+evenNumbers(nums);
+alert(evens);
+
+
+
+
+
+
+</script>
+</body>
+</html>

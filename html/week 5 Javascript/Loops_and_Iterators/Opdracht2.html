@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops - opdracht 2</title>
+  </head>
+  <body>
+    <!-- Opdracht 2:
+    Maak een for-loop die alleen even getallen van 0 t/m 20 in je console uitprint -->
+
+    <div id="answer"></div>
+
+    <script>
+    //    const number
+    //    = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+
+
+
+
+
+    //   (function () {
+    //     for (let i = 0; i < 20; i++) {
+    //       if (i % 2 === 0) i + " ";
+    //       console.log(i);
+    //     }
+
+    //     for (let i = 0; i < 20; i++) {
+    //       if (i % 2 !== 0) i + " ";
+    //       console.log(i);
+          
+    //     }
+        
+    // //   })();
+
+// Deze is ook goed maar niet met een for loop
+    // let arrays = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+    //         let result = arrays.filter((numbers)=>{
+    //              if(numbers%2!==0){
+    //                console.log(`${numbers} is not even`);
+    //              } else {
+    //                  console.log(`${numbers} is even`);
+    //             }
+    //         });
+      
+    
+
+            let nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+let evens = [];
+let odds = [];
+
+let evenNumbers = function(nums) {
+    for (let i = 0; i < nums.length; i++) {
+
+        if ((nums[i] % 2) != 1) {
+            evens.push(nums[i]);
+                console.log(evens);
+        }
+        else {
+            odds.push(nums[i]);
+                console.log(odds);
+        }
+    }
+
+};
+
+evenNumbers(nums);
+alert(evens);
+alert(odds);
+
+    </script>
+  </body>
+</html>
