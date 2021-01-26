@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+
+    <style>
+
+
+table {
+ width: 320px;
+ height: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+        </style>
+
+</head>
+<body>
+  
+   
+ <!-- Eerst een grote tabel maken . -->
+    <table border ="1">
+
+    <tr>
+        <!-- Hiermee kan je op clear drukken voor een leeg inputveld. -->
+
+<td colspan ="3"><input  type="text" id="invoer"></td>
+    </tr>
+    <!-- Hieronder komen de knopjes/buttons voor invoer. -->
+<tr>
+    <td><input type="button" value="c" onclick="clr('alclear')"/></td>
+    <td><input type="button"  value="+/-" onclick="showOff('+/-')"/></td>
+    <td><input type="button"  value="%" onclick="showOff('%')"/></td>
+    <td><input type="button"  value="/" onclick="showOff('/')"/></td
+   
+    
+</tr> 
+<tr>
+    <td><input type="button" value="7" onclick="showOff('7')"/></td>
+    <td><input type="button" value="8" onclick="showOff('8')"/></td>
+    <td><input type="button" value="9" onclick="showOff('9')"/></td>
+    <td><input type="button" value="*" onclick="showOff('*')"/></td>
+   
+</tr> 
+<tr>
+    
+    <td><input type="button" value="4" onclick="showOff('4')"/></td>
+    <td><input type="button" value="5" onclick="showOff('5')"/></td>
+    <td><input type="button" value="6" onclick="showOff('6')"/></td> 
+    <td><input type="button" value="-" onclick="showOff('-')"/></td>
+    
+</tr>
+<tr>
+    <td><input type="button" value="1" onclick="showOff('1')"/></td>
+    <td><input type="button" value="2" onclick="showOff('2')"/></td>
+    <td><input type="button" value="3" onclick="showOff('3')"/></td> 
+    <td><input type="button" value="+" onclick="showOff('+')"/></td>
+    
+</tr>
+<tr>
+    <!-- let op het vakje 0 heeft de grootte van 2 vakjes , ik gebruikte colspan hiervoor. -->
+    <td colspan="2"><input  type="button"  value="0" onclick="showOff('0')"/></td>
+    <td><input type="button"  value="." onclick="showOff('.')"/></td>
+
+    <!-- Dit wordt de functie oplossing -->
+    <td><input type="button"  value="=" onclick="oplossing()"/></td>
+</tr>
+
+    </table>
+
+
+
+
+
+
+<script>
+  
+//   3 functies - showOff , oplossing en clr
+
+// Nog 1 functie voor de som
+// function som (){
+//     // ??
+// }
+// Deze functie laat zien wat je in het display-venster ziet.
+function showOff(val)
+ {
+    // je wil cijfers aan blijven geven totdat jij een operator aanklikt
+    // hoe voeg jij info toe aan een array?
+//    let som =[i=0 , i=9999999 ]
+    document.getElementById("invoer").value+=val
+    ;
+    // console.log(val);
+}
+// Deze functie geeft de de oplossing/het antwoord op de som.
+function oplossing () 
+{
+    let x = document.getElementById("invoer").value
+    let y = eval(x)
+     document.getElementById("invoer").value= y
+}
+// Deze functie maakt het scherm weer leeg, clear of all-clear.
+function clr () 
+{
+            document.getElementById("invoer").value= ""
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+De rekenmachine heeft de volgende functionaliteiten:
+● De basis berekeningen zoals, optellen, aftrekken, vermenigvuldigen en delen.
+● Wanneer een getal is ingevoerd dan verandert de tekst van AC naar C.
+● Wanneer een rekenkundig symbol (/, X, -, +, =) is geklikt, dan wordt de
+achtergrondkleur van dat symbool wit en wordt de tekst kleur oranje.
+● Als het antwoord een decimaal getal bevat, dan rond je het antwoord altijd af op 2
+decimaal getal.
+● Je hoeft niet altijd een volledige berekening in te voeren. Bv, 5+ geeft als antwoord 10
+, 6/ geeft als antwoord 1 of 9X geeft als antwoord 81.
+● De +/- symbool maakt het getal negatief of positief.
+● De % symbool is een modulo.
+● De AC of C symbol reset jouw rekenmachine
+
+Stappenplan: 
+
+-Maak eerst 1 grote tabel 
+-Maak de knopjes - buttons en een inputfield
+-Verdeel ze onder in cijfers , resultaat,clear en de formules.
+
+
+
+
+// Deze functie laat zien wat je in het display-venster ziet.
+function showOff(val) {
+    document.getElementById("invoer").value+= val
+    & "" ;
+}
+// Deze functie geeft de de oplossing/het antwoord op de som.
+function oplossing () {
+    let x = document.getElementById("invoer").value;
+    let y = eval(x)
+     document.getElementById("invoer").value= y;
+}
+// Deze functie maakt het scherm weer leeg, clear of all-clear.
+function clr () {
+            document.getElementById("invoer").value= " ";
+}
+
+
+
+
