@@ -8,6 +8,13 @@
 
 <style>
 
+/* table, th, td {
+  
+ 
+} */
+
+
+
 
 table {
      width: 300px;
@@ -18,33 +25,23 @@ table {
      border-top-right-radius: 12px;
 }
 
-/* 
+
+
  input[type="button"]
     {
         height:60px ;
-        width: 60px;
+        width: 100px;
     border-radius: 75px;
     background-color:lightgrey;
     
-     }  */
-
-input[type="button"] {
-        height:60px ;
-        width: 60px;
-    border-radius: 75px;
-    
-} 
-    
-
-
-
-
+    width:100%;
+    }
 
  input[id="invoer"] {
- height: 60px ;
- width: 300px ;
- background-color: rgb(63, 59, 59) ;
- border: solid rgb(63, 59, 59) 3px ;
+height: 60px ;
+width: 300px ;
+background-color: rgb(63, 59, 59) ;
+border: solid rgb(63, 59, 59) 3px ;
 
  }
 
@@ -54,14 +51,12 @@ input[type="button"] {
 bijv class="operators" */
 
 
-/* .operator {
-    background-color: yellow;
-} */
-
-
-#buttonyelloww {
-    background-color:#ffa500  ;
+input [class="operator"] {
+    color: yellow;
 }
+
+
+
 
 
 
@@ -94,7 +89,7 @@ bijv class="operators" */
     <td><input type="button" value="ac" onclick="clr('alclear')"/></td>
     <td><input type="button"  value="+/-" onclick="showOff('+/-')"/></td>
     <td><input type="button"  value="%" onclick="showOff('%')"/></td>
-    <td><input class="operator" id="buttonyelloww" type="button"  value="/" onclick="this.style.backgroundColor = '#FFFAFA';this.style.color = '#FFFAFA';"showOff('/')"/></td
+    <td><input class="operator"  type="button"  value="/" onclick="showOff('/')"/></td
    
     
 </tr> 
@@ -102,8 +97,7 @@ bijv class="operators" */
     <td><input type="button" value="7" onclick="showOff('7')"/></td>
     <td><input type="button" value="8" onclick="showOff('8')"/></td>
     <td><input type="button" value="9" onclick="showOff('9')"/></td>
-    <td><input type="button" id="buttonyelloww"  value="*" onclick="this.style.backgroundColor = '#FFFAFA';this.style.color = '#FFFAFA';"showOff('*')"/></td>
-    <!-- "document.body.style.backgroundColor = 'green';" -->
+    <td><input type="button" value="*" onclick="showOff('*')"/></td>
    
 </tr> 
 <tr>
@@ -111,14 +105,14 @@ bijv class="operators" */
     <td><input type="button" value="4" onclick="showOff('4')"/></td>
     <td><input type="button" value="5" onclick="showOff('5')"/></td>
     <td><input type="button" value="6" onclick="showOff('6')"/></td> 
-    <td><input type="button"id="buttonyelloww" value="-" onclick="this.style.backgroundColor = '#FFFAFA';this.style.color = '#FFFAFA';""showOff('-')"/></td>
+    <td><input type="button" value="-" onclick="showOff('-')"/></td>
     
 </tr>
 <tr>
     <td><input type="button" value="1" onclick="showOff('1')"/></td>
     <td><input type="button" value="2" onclick="showOff('2')"/></td>
     <td><input type="button" value="3" onclick="showOff('3')"/></td> 
-    <td><input type="button" id="buttonyelloww" value="+" onclick="this.style.backgroundColor = '#FFFAFA';this.style.color = '#FFFAFA';"showOff('+')"/></td>
+    <td><input type="button" value="+" onclick="showOff('+')"/></td>
     
 </tr>
 <tr>
@@ -127,7 +121,7 @@ bijv class="operators" */
     <td><input type="button"  value="." onclick="showOff('.')"/></td>
 
     <!-- Dit wordt de functie oplossing -->
-    <td><input type="button" id="buttonyelloww" value="=" onclick="this.style.backgroundColor = '#FFFAFA';this.style.color = '#FFFAFA';"oplossing()"/></td>
+    <td><input type="button"  value="=" onclick="oplossing()"/></td>
 </tr>
 
     </table>
@@ -156,48 +150,23 @@ function showOff(val)
     // console.log(val);
 }
 // Deze functie geeft de de oplossing/het antwoord op de som.
-function oplossing () 
+// function oplossing (eersteInvoer,tweedeInvoer) {
+//     return  eersteInvoer * tweedeInvoer ;
+
+    
+// }
+
+function oplossing()
 {
-    // Eval staat voor uitvoeren ,evalueert..daarom heb ik deze gebruikt om een som te kunnen maken waar ik x en y met elkaar koppel.
-    // Ik wil deze graag op een andere manier maken! Namelijk de functies uitschrijven.
-    let eersteInvoer = document.getElementById("invoer").value;
-    let tweedeInvoer = eval(eersteInvoer);
-     document.getElementById("invoer").value= tweedeInvoer;
+let x = document.getElementById("invoer").value
+let y = eval(x)
+document.getElementById("invoer").value = y
 }
 // Deze functie maakt het scherm weer leeg, clear of all-clear. ???
 function clr () 
 {
-            document.getElementById("invoer").value= "";
-            // document.getElementById("invoer").innerText = "C";
+            document.getElementById("invoer").value= ""
 }
-
-
-
-// document.querySelector("buttonyellow").onsubmit= function () {
-//     if (document.querySelector("button")).value =='') {
-//         document.querySelector("button").style.background = 'yellow';
-//         return false;
-//     }
-// }
-// document.querySelector("button").onfocus = function() {
-//     document.querySelector("button").style.background = 'pink';
-// }
-
-
-// let count = 1;
-//     function setColor(buttonyellow, color) {
-//         let property = document.getElementById("buttonyellow");
-//         if (count == 0) {
-//             property.style.backgroundColor = "#FFFF00"
-//             count = 1;        
-//         }
-//         else {
-//             property.style.backgroundColor = "#FFC0CB"
-//             count = 0;
-//         }
-//     }
-
-
 
 </script>
 
@@ -205,10 +174,3 @@ function clr ()
 
 
 
-
-
-
-
-
-</body>
-</html>

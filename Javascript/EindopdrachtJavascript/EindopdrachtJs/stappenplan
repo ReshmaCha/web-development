@@ -19,23 +19,3 @@ Stappenplan:
 
 
 
-
-// Deze functie laat zien wat je in het display-venster ziet.
-function showOff(val) {
-    document.getElementById("invoer").value+= val
-    & "" ;
-}
-// Deze functie geeft de de oplossing/het antwoord op de som.
-function oplossing () {
-    let x = document.getElementById("invoer").value;
-    let y = eval(x)
-     document.getElementById("invoer").value= y;
-}
-// Deze functie maakt het scherm weer leeg, clear of all-clear.
-function clr () {
-            document.getElementById("invoer").value= " ";
-}
-
-
-
-
