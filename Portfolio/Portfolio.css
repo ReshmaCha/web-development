@@ -1,0 +1,76 @@
+.bg-img {
+    /* The image used */
+    background-image: url("./Images/Erasmus-harrold.jpg");
+  
+    min-height: 530px;
+   opacity: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Needed to position the navbar */
+    position: relative;
+  }
+  
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+  }
+  
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+
+    background-color: rgba(163, 118, 157, 0);
+  }
+ 
+  
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:rgb(163, 118, 157);
+    color: black;
+  }
+ 
+  /* Dit is de onderste navigatiebar */
+
+  .navbar {
+    overflow: hidden;
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: right;
+    display: block;
+    color: #0e0d0d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background: #0c0c0c;
+    background-color: rgb(163, 118, 157);
+    color: black;
+  }
+  
+  .navbar a.active {
+    color: rgb(0, 0, 0);
+  }
+  
+  
