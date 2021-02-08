@@ -45,20 +45,22 @@
  
   /* Dit is de onderste navigatiebar */
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+}
+
   .navbar {
-    overflow: hidden;
-    
-    position: fixed;
     bottom: 0;
     width: 100%;
+    float: right;
   }
   
   .navbar a {
-    float: right;
-    display: block;
+    padding-right: 20px;
     color: #0e0d0d;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -136,3 +138,33 @@
     }
   }
    */
+   input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=verzend] {
+    background-color:rgb(163, 118, 157);
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  
+  input[type=verzend]:hover {
+    background-color:rgb(163, 118, 157);
+  }
+  
+  .formulier {
+    border-radius: 5px;
+    background-color: rgb(236, 198, 223);
+    padding: 20px;
+  }
+
