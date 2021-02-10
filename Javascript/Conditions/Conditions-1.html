@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conditions-opdracht1 </title>
-</head>
-<body>
-   
-<input type="number" name="number" id="number">
-<button id="btn" onclick="checkNumber()">button </button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conditions-opdracht1</title>
+  </head>
+  <body>
+    <p>Hierboven zie je een input field, een button en een label.</p>
+    <p>● Het input field kun je een getal mee invoeren.</p>
+    <p>● De button roept de checkNumber functie aan.</p>
+    <p>● De label wordt gebruikt om een tekst te tonen aan de hand van een logica die jij gaat programmeren. </p>
+    <p>Programmeer de volgende logica in de checkNumber functie.</p>
+    <p>● Als het ingevoerde getal is gelijk aan 3, dan toon je op het label: “Het ingevoerde getal is gelijk aan 3”.</p>
+    
+     
+
+      <input type="number" name="number" id="number" />
+      <button id="btn" onclick="checkNumber()">button</button>
+    </p>
 
     <div>
-        <span id="label"></span>
-
+      <span id="label"></span>
     </div>
-   <script>
-    //    function = wat gaan we doen, wat willen wij doen?
-    //    Checknumber = verwijst naar wat we willen aanpassen nadat je geklikt heb
-       function checkNumber() {
-           
-        //    let is je variable die je  aanmaakt 
-            // number is de input 
-            // document.getElementById is hetgene waar je naar verwijst
-            // de number erin is dus datgene wat je hiermee bewerkt
-            // .value staat voor een getal 
-            // .innertext staat voor een Tekst 
-            // .innerhtml is gewoon alles in de body
-            let number=   document.getElementById("number").value;
-            if (number == 3) { document.getElementById("label").innerText = "Het ingevoerde getal is gelijk aan 3";
-                 
-            }
-            
-            
-            
-            
-       }
-   </script> 
-</body>
+    <script>
+      //    function = wat gaan we doen, wat willen wij doen?
+      //    Checknumber = verwijst naar wat we willen aanpassen nadat je geklikt heb
+      function checkNumber() {
+        //    let is je variable die je  aanmaakt
+        // number is de input
+        // document.getElementById is hetgene waar je naar verwijst
+        // de number erin is dus datgene wat je hiermee bewerkt
+        // .value staat voor een getal
+        // .innertext staat voor een Tekst
+        // .innerhtml is gewoon alles in de body
+        let number = document.getElementById("number").value;
+        if (number == 3) {
+          document.getElementById("label").innerText =
+            "Het ingevoerde getal is gelijk aan 3";
+        }
+      }
+    </script>
+  </body>
 </html>
