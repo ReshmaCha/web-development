@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Opdracht 7</title>
   </head>
   <body>
     <h3>Opdracht 7:</h3>
@@ -22,16 +22,31 @@
       3,6,9,12,15,18,21,24,27,30 in je console uitgeprint wordt
     </p>
 
-<script>
-    let number  = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-while (false) {
+
+ 
+ <script>
+            const getal7 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+                21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
+            console.log(getal7);
+            console.log(getal7.length); //30 items
+
+            let outputGetal7 = "";
+            let indexGetal7 = 0;
+            while (getal7[indexGetal7] <= 3) { outputGetal7 += getal7[indexGetal7] + " "; indexGetal7++; }
+            console.log(outputGetal7);
+
+            //prints out 2, 4, 6, 8, 10, 12 etc.
+            for (let i = 0; i <= 20; i++) {
+                if (i % 2 == 0) { console.log(i); }
+            }
+            // prints out 3, 6, 9, 12, 15, 18, 21, etc.
+            for (let i = 0; i <= 30; i++) {
+                if (i % 3 == 0) { console.log(i); }
+            }
         
- }
 
-(console.log(number));
- (console.log(number));
- (console.log(number));
 
+ 
 
 </script>
 

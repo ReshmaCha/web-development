@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 9 </title>
+</head>
+<body>
+   
+    <h2>Opdracht 9:</h2>
+    
+
+    
+    <p>Stel je hebt het volgende array met random getallen:</p>
+    <p>● [2,7,5,10,4,9,3,1,8,6]</p>
+    <p>Bubble sort is een hele bekende sorterings algoritme.</p>
+    <p>Hiermee kun je de array met random getallen sorteren van klein naar groot. </p>
+    <p>Je mag bij deze oefening geen gebruik maken van de sort() functie.</p>
+    <p>Lees je in hoe Bubble sort werkt: https://en.wikipedia.org/wiki/Bubble_sort en codeer de sorterings algoritme uit.</p>
+    
+
+    <script>
+        //variables
+        let listArray = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6]
+        //listArray lenght
+        let listLenght = listArray.length;
+        //List empty array, temprary place
+        let listTemp = [];
+        console.log("listArray lenght is: " + listLenght);
+
+        //loops
+        //  niet klaar
+        for (i = 0; i < listLenght; i++) {
+            //condition to compare listarray item left + item next to it/right of it, for example 2 & 7 if 2 is bigger than 7.
+            //if bigger than left-item, right itemr moves to left.
+        
+            if (listArray[i] > listArray[i+1]){
+                listTemp = listArray[1];
+                listArray[i] =listArray[i+1];
+                listArray[i+1] = listTemp;
+                //left-item 7 bigger than right-tiem 5 ==> 7 moves to right (switches)
+            }
+        
+        }
+        console.log(listTemp); //5 comes out of it.
+        //need to write condition / statement dat door elk item gaat.
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>

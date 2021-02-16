@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opdracht 8</title>
+</head>
+<body>
+  
+    <h2>Opdracht 8:</h2>
+    
+    <p> Maak een for loop die van 0 t/m 50 itereert. Een hele bekende oefening is de fibonacci reeks. </p>
+    <p> Lees je in hoe fibonacci reeks werkt: https://www.fibonicci.com/nl/rij-van-fibonacci/. </p>
+    <p> Neem zelf eerst de tijd om dit uit te coderen, want op internet staat letterlijk het antwoord. </p>
+    <p> Het gaat hier om het aanleren van bepaalde denkwijze om dit op te lossen.</p>
+    <p> Maak hiervoor een stappenplan en werkt dit uit in code. </p> 
+
+<script>
+
+
+            let startNrA = 0;
+            let prevNrB = 1;
+            let newNrC = startNrA + prevNrB;
+
+            for (let i = 0; i <= 50; i++) {
+                console.log(newNrC);
+                newNrC = startNrA + prevNrB;
+
+                startNrA = prevNrB;
+
+                prevNrB = newNrC;
+               
+            }
+            
+
+
+
+</script>
+
+
+
+</body>
+</html>
