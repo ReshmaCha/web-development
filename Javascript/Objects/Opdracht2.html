@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects opdracht2 </title>
+  </head>
+  <body>
+    <h2>Opdracht 2:</h2>
+
+    <p>
+      Maak een Object van contactgegevens en voeg dat ook toe aan de club
+      object:
+    </p>
+    <p>● Contactgegevens</p>
+    <p>○ Adres</p>
+    <p>○ Telefoonnr</p>
+    <p>○ Contactpersoon</p>
+
+    <script>
+      let club = {
+           naam: "Feyenoord", type: "Voetbal", ledenaantal: "38" ,
+         adres: "stadionweg", telefoonnr: "14010", contactpersoon: "Advocaat",
+        getFulLclub: function () {
+                    return this.naam + "\n" + this.type + "\n" + this.ledenaantal + "\n" + this.adres + "\n" + this.telefoonnr + "\n" + this.contactpersoon
+                }};
+                  console.log(club.getFulLclub);
+     
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects opdracht 7</title>
+
+    <style>
+        table
+        {
+            border: 1px solid #000;
+        }
+        td
+        {
+           border: 1px solid #000;
+           font-size: 48px;
+           width: 75px;
+           height: 75px;
+           text-align: center;
+        }
+       </style>
+
+
+
+
+</head>
+<body>
+    <h3> Opdracht 7:</h3>
+   <p>
+    Met al de voorgaande onderdelen ben je nu in staat om een simpele spel te maken,
+    Bijvoorbeeld rock, paper scissor. Durf je het aan om dit te bouwen?
+</p> 
+
+
+
+
+
+<table>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+   </table>
+
+
+   <script>
+
+
+    var beurtSpeler1 = true;                // Speler 1 begint
+    
+    function zet()
+    {
+        if(this.innerHTML != "")            // Als er al iets in staat,
+        {
+            return;                         // dan gaat de zet niet door
+        }
+        else                                // Als de cel leeg is,
+        {                                   // dan gaan we de zet verwerken
+            if(beurtSpeler1)                // Als speler 1 aan de beurt is,
+            {
+                this.innerHTML = 'x';       // dan wordt de inhoud een X
+            }
+            else                            // Als speler 2 aan de beurt is,
+            {
+                this.innerHTML = 'o';       // dan wordt de inhoud een O
+            }
+            
+            beurtSpeler1 = !beurtSpeler1;   // Wissel de beurt
+        }
+    }
+    
+    function maakEvents()
+    {
+        // Ken een onclick event toe aan alle td's in het document
+        var tds = document.getElementsByTagName("td");
+        for(var i = 0; i < tds.length; ++i)
+        {
+            tds[i].onclick = zet;
+        }
+    }
+    window.onload = maakEvents;
+   </script>
+
+
+<!todo-- https://stackoverflow.com/questions/588040/window-onload-vs-document-onload -->
+
+
+
+</body>
+</html>

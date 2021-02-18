@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects opdracht 6</title>
+  </head>
+  <body>
+    <h2>Opdracht 6:</h2>
+    <p>
+      De nieuwe manier van objecten creëren kan je ook gebruik maken van
+      classes. Lees je in over classes:
+
+     
+    <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/">Lees je in op deze website</a></p>
+
+      Zet opdracht 4 om in classes i.p.v object constructors
+
+      A JavaScript class is not an object.
+
+      It is a template for JavaScript objects. 
+
+    </p>
+
+    <script>
+
+// const Person = function(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     }
+//     const persons = [
+//     new Person("Jan", 24),
+//     new Person("Klaas", 15),
+//     new Person("Yanis", 42),
+//     new Person("Rupel", 55),
+//     new Person("Hendrik", 32),
+//     new Person("Mono", 28),
+//     new Person("West", 23),
+//     ]
+
+// persons.sort(function(name,age) {
+//     return name.age - age.age;
+// });
+
+// console.log(persons);
+
+class Person {
+    persons(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+ 
+let naam1 = new Person ("Jan", 24);  
+let naam2 = new Person ("Klaas",15);  
+let naam3 = new Person ("Yanis",42);
+let naam4 = new Person ("Rupel",55); 
+let naam5 = new Person ("Hendrik", 32); 
+let naam6= new Person ("Moni", 28);
+let naam7 = new Person ("West", 23);
+
+console.log(Person.name , Person.age);
+
+
+
+    </script>
+  </body>
+</html>
